@@ -1,14 +1,20 @@
 <head>
-  <title>tripping-octo-wight</title>
+  <title>Calendar Page</title>
 </head>
 
-<body>
-  <h1>Welcome to Meteor!</h1>
+<body> 
+	<h1 align="center">
+		<style>
+		h1 {color: #8B008B}
+		</style>
+		Syllabus 
+	</h1>
+	<div>
+  	{{> calendar}} 
+  </div>
+  	<style>
+		h1 {color: #8B008B}
+		div {color: #8B008B}
+	</style>
+</body> 
 
-  {{> hello}}
-</body>
-
-<template name="hello">
-  <button>Click Me</button>
-  <p>You've pressed the button {{counter}} times.</p>
-</template>

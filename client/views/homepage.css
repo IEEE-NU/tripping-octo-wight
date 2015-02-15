@@ -1,6 +1,6 @@
 /* CSS declarations go here */
 .row {
-	color: purple;
+	color: #4E015C;
 	margin: 100px;
 	text-align: center;
 }
@@ -9,7 +9,6 @@ div #or {
 	top: 20px;
 }
 
-#NUimage {
-	margin-top:50px;
-	height: 200px;
+.pic {
+	width:50%;
 }

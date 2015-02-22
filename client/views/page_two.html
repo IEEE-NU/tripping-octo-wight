@@ -1,8 +1,14 @@
 <template name='pageTwo'>
 	<div class="table">
 <h2>Choose a Calendar</h2>
-    <button type="button" class="btn btn-default btn1"> All </button>
-	<p><p><button type="button" class="btn btn-default btn2"> Upload New</button></p></p>
+    <button type="button" class="btn btn-default btn1" name="All"> All </button>
+    {{#each files}}
+    <button type="button" class="btn btn-default btn1" name="{{name}}"> {{name}} </button>
+    {{/each}}
+
+	<p>
+	<form><input class="btn btn-default btn2" type="file" value="Upload" name="fileuploader"><input type="submit" value="submit"></form>
+	</p>
 	</div>
 	<div class="logo">
 	<img src="Northwestern.jpeg" class="pic"/>
